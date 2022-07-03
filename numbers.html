@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numbers</title>
+    <!--=======================Font Awesome====================-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- =====================Page_css======================= -->
+    <link rel="stylesheet" href="./styles/numbers.css" />
+  </head>
+  <body>
+    <!-- Game section -->
+
+    <div class="number_box" id="number_box">
+      <div class="back">
+        <a href="./startNumber.html">
+          <i class="fa fa-backward"></i>
+        </a>
+      </div>
+      <div class="data">
+        <div class="thubnail">
+          <img
+            id="get_images"
+            src="./assets/inages/numbersImages/0.jpg"
+            alt=""
+          />
+        </div>
+        <div class="caption" id="caption">
+          <p id="para">Zero</p>
+        </div>
+      </div>
+      <div class="btns">
+        <div class="prev btn"><button>Prev</button></div>
+        <div class="next btn"><button>Next</button></div>
+      </div>
+    </div>
+    <!-- home Btn -->
+    <div class="home_btn">
+      <a href="./home.html">
+        <i
+          class="fas fa-house-user"
+          data-toggle="tooltip"
+          data-placement="Top"
+          title="Go To Home"
+        ></i>
+      </a>
+    </div>
+    <audio id="music" controls autoplay preload="auto">
+      <source class="audio" src="./numbers/0.mp3" />
+    </audio>
+    <script src="./js/numbers.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import './home.scss';
+
+body {
+  background-color: $white;
+}
+// Alphabets Section
+.numbers {
+  background: url('../assets/inages/counting.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    a {
+      text-decoration: none;
+      color: $theme-primary;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 25%;
+    .heading {
+      font-size: 80px;
+      text-align: center;
+      font-weight: 800;
+      color: $theme-primary;
+      -webkit-text-stroke-width: 2px;
+
+      -webkit-text-stroke-color: black;
+    }
+    .play_btn {
+      text-align: center;
+
+      a {
+        .fas {
+          font-size: 160px;
+          color: $theme-primary;
+          -webkit-text-stroke-width: 5px;
+          -webkit-text-stroke-color: $white;
+        }
+      }
+    }
+  }
+}
+
+// Main page
+.home_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  .fas {
+    color: $theme-primary;
+    font-size: 50px;
+  }
+}

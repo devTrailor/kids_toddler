@@ -1,0 +1,72 @@
+@import './home.scss';
+
+body {
+  background-color: $white;
+}
+// Alphabets Section
+.alphabets {
+  background: url('../assets/inages/alpahbets.png') no-repeat;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+
+    a {
+      text-decoration: none;
+      color: $theme-primary;
+      font-size: 50px;
+    }
+  }
+  .content {
+    position: absolute;
+    top: 32%;
+    @include mobile {
+      top: 30%;
+    }
+    .heading {
+      font-size: 80px;
+      font-weight: 800;
+      color: $theme-primary;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: rgb(0, 0, 0);
+      @include mobile{
+        font-size: 50px;
+
+      }
+    }
+    .play_btn {
+      text-align: center;
+      animation: anm all alternate 0.5s;
+
+      a {
+        .fas {
+          font-size: 160px;
+          color: $theme-primary;
+          -webkit-text-stroke-width: 5px;
+          -webkit-text-stroke-color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+// Main page
+.home_btn{
+  position: absolute;
+  bottom:20px;
+  left: 20px;
+  cursor: pointer;
+  .fas{
+    color: $theme-primary;
+    font-size: 50px;
+  }
+}

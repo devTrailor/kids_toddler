@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A to Z</title>
+    <!--=======================Font Awesome====================-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- =====================Page_css======================= -->
+    <link rel="stylesheet" href="./styles/abcarray.css" />
+  </head>
+  <body>
+    <!-- Game section -->
+    <div class="main_box" id="main_box">
+      <div class="back">
+        <a href="./abcd.html">
+          <i class="fa fa-backward" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="data">
+        <div class="thubnail">
+          <img
+            id="get_images"
+            src="./assets/inages/alphabetsimg/a.jpg"
+            alt=""
+          />
+        </div>
+        <div class="caption" id="caption">
+          <p id="para">Apple</p>
+        </div>
+      </div>
+
+      <div class="btns">
+        <div class="prev btn"><button>Prev</button></div>
+        <div class="next btn"><button>Next</button></div>
+      </div>
+      <!-- home Btn -->
+      <div class="home_btn">
+        <a href="./home.html">
+          <i
+            class="fas fa-house-user"
+            data-toggle="tooltip"
+            data-placement="Top"
+            title="Go To Home"
+          ></i>
+        </a>
+      </div>
+    </div>
+
+    <audio id="music" controls autoplay preload="auto">
+      <source class="audio" src="./alpahbets_sounds/a.mp3" />
+    </audio>
+
+    <!-- ======================javascript================= -->
+    <script src="./js/abcarray.js"></script>
+  </body>
+</html>

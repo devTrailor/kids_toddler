@@ -1,0 +1,110 @@
+@import './home.scss';
+body {
+  position: relative;
+  background: url('../assets/inages/counting.png') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  audio {
+    position: absolute;
+    bottom: -35px;
+    left: 40%;
+    display: none;
+  }
+}
+.number_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    a {
+      text-decoration: none;
+      color: $theme-primary;
+    }
+  }
+  .data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+
+    .thubnail {
+      width: 75%;
+      margin: 0 auto;
+      @include mobile-tablet-p {
+        width: 90%;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 550px;
+      }
+    }
+    .caption {
+      text-align: center;
+      color: $white;
+      border-radius: 10px;
+      display: block;
+      position: absolute;
+      width: 76%;
+      bottom: 1px;
+      left: 12%;
+      background-color: $white;
+      color: $theme-primary;
+      filter: opacity(0.5);
+      font-size: 52px;
+      z-index: 55555;
+
+      @include mobile {
+        font-size: 23px;
+        width: 90%;
+        left: 5%;
+        bottom: 4px;
+      }
+      @include tablet {
+        width: 76%;
+        left: 12%;
+      }
+      @include tablet-p {
+        width: 90%;
+        left: 5%;
+      }
+      @include desktop {
+        width: 76%;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    .btn {
+      button {
+        border-radius: 5px;
+        padding: 15px 30px;
+        border: none;
+        background-color: $theme-primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Main page
+.home_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  .fas {
+    color: $theme-primary;
+    font-size: 50px;
+  }
+}

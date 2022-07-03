@@ -1,0 +1,99 @@
+@import './home.scss';
+
+body {
+  position: relative;
+  audio {
+    position: absolute;
+    bottom: 105px;
+    left: 40%;
+    display: none;
+  }
+}
+
+.main_box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  height: 100vh;
+  background-image: url('../assets/inages/alpahbets.png');
+  align-items: center;
+
+  position: relative;
+  .back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 50px;
+    a {
+      text-decoration: none;
+      color: $theme-primary;
+    }
+  }
+
+  .data {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    .thubnail {
+      width: 75%;
+      margin: 0 auto;
+      @include mobile-tablet-p {
+        width: 90%;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 550px;
+      }
+    }
+    .caption {
+      text-align: center;
+      color: $white;
+      border-radius: 10px;
+      display: block;
+      position: absolute;
+      bottom: -25px;
+      width: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $white;
+      color: $theme-primary;
+      filter: opacity(0.5);
+      font-size: 52px;
+      z-index: 55555;
+
+      @include mobile {
+        font-size: 35px;
+        width: 94%;
+      }
+    }
+  }
+  .btns {
+    display: flex;
+    gap: 20px;
+    .btn {
+      button {
+        border-radius: 5px;
+        padding: 15px 30px;
+        border: none;
+        background-color: $theme-primary;
+        color: $white;
+      }
+    }
+  }
+}
+
+// Main page
+.home_btn{
+  position: absolute;
+  bottom:20px;
+  left: 20px;
+  z-index: 9999;
+  cursor: pointer;
+  .fas{
+    color: $theme-primary;
+    font-size: 50px;
+  }
+}

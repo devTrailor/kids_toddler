@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f1fc;
+  scroll-behavior: smooth;
+}
+
+::-moz-selection {
+  background-color: #8a2be2;
+  color: white;
+}
+
+::selection {
+  background-color: #8a2be2;
+  color: white;
+}
+
+.contaiiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  height: 100vh;
+}
+
+.contaiiner .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.contaiiner .header h1 {
+  color: #12013A;
+  font-size: 75px;
+  font-family: "Oxygen", sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contaiiner .header h1 span {
+  color: #8a2be2;
+}
+
+.contaiiner .header p {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  color: #12013A;
+}
+
+.contaiiner .header .btn {
+  list-style: none;
+  text-align: center;
+  -webkit-animation: jumping all infinite;
+          animation: jumping all infinite;
+}
+
+.contaiiner .header .btn li {
+  margin-top: 20px;
+}
+
+.contaiiner .header .btn li a {
+  background-color: #8a2be2;
+  padding: 15px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.contaiiner .header .btn li a .fas {
+  color: white;
+  background-color: #FF724C;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-left: 10px;
+  -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.64);
+          box-shadow: 0 5px 32px rgba(0, 0, 0, 0.64);
+}
+
+.contaiiner .header .btn li:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+@-webkit-keyframes jumping {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+}
+
+@keyframes jumping {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+  100% {
+    -webkit-transform: translateY(500px);
+            transform: translateY(500px);
+  }
+}
+
+body {
+  background-color: white;
+}
+
+.alphabets {
+  background: url("../assets/inages/alpahbets.png") no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.alphabets .back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+}
+
+.alphabets .back a {
+  text-decoration: none;
+  color: #8a2be2;
+  font-size: 50px;
+}
+
+.alphabets .content {
+  position: absolute;
+  top: 32%;
+}
+
+@media (max-width: 767px) {
+  .alphabets .content {
+    top: 30%;
+  }
+}
+
+.alphabets .content .heading {
+  font-size: 80px;
+  font-weight: 800;
+  color: #8a2be2;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+@media (max-width: 767px) {
+  .alphabets .content .heading {
+    font-size: 50px;
+  }
+}
+
+.alphabets .content .play_btn {
+  text-align: center;
+  -webkit-animation: anm all alternate 0.5s;
+          animation: anm all alternate 0.5s;
+}
+
+.alphabets .content .play_btn a .fas {
+  font-size: 160px;
+  color: #8a2be2;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.home_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.home_btn .fas {
+  color: #8a2be2;
+  font-size: 50px;
+}
+/*# sourceMappingURL=abcd.css.map */
